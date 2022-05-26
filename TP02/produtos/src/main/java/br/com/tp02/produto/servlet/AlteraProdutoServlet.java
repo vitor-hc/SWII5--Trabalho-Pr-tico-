@@ -22,8 +22,9 @@ public class AlteraProdutoServlet extends HttpServlet {
 		
 		System.out.println("Alterar produto");
 		
-		String paramId = request.getParameter("id");
-		Integer id = Integer.valueOf(paramId);
+		
+		long id = Long.parseLong(request.getParameter("id"));
+		System.out.println(id);
 		String nomeProduto = request.getParameter("nome");		
 		String paramDescricaoProduto = request.getParameter("descricao");		
 		String paramUnidade = request.getParameter("unidadeCompra");
@@ -41,7 +42,7 @@ public class AlteraProdutoServlet extends HttpServlet {
 		
 		
 
-		System.out.println(id);
+		
 		Banco banco = new Banco();
 		Produto produto = banco.buscarProdutoPeloId(id);
 		produto.setNome(nomeProduto);

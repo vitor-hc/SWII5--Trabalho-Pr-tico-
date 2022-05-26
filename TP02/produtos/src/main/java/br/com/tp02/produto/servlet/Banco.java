@@ -49,7 +49,7 @@ static {
 	}
 
 	// remover produto
-	public void removerProduto(Integer id) {
+	public void removerProduto(long  id) {
 		Iterator<Produto> it= lista.iterator();
 		while(it.hasNext()){
 			
@@ -63,7 +63,7 @@ static {
 	}
 	
 	//retornar empresas
-	public Produto buscarProdutoPeloId(Integer id) {
+	public Produto buscarProdutoPeloId(long id) {
 		for(Produto produto:lista) {
 			if(produto.getId()==id) {
 				return produto;

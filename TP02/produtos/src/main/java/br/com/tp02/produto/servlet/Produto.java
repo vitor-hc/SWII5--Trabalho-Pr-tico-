@@ -6,7 +6,7 @@ ANTONIO RODRIGUES DANTAS JUNIOR CB3010775
 */
 public class Produto {
 
-	private Integer id;
+	private long id;
 	private String nome;
 	private int unidadeCompra;
 	private String descricao;
@@ -15,11 +15,11 @@ public class Produto {
 	
 	
 
-	public Integer getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

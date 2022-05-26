@@ -25,7 +25,7 @@ public class RemoveProdutoServlet extends HttpServlet {
 		Integer id = Integer.valueOf(paramId);
 		System.out.println(id);
 		
-		Banco banco = new Banco();
+		Produtos banco = new Produtos();
 		banco.removerProduto(id);
 		
 		response.sendRedirect("ListaProdutos");

@@ -43,7 +43,7 @@ public class AlteraProdutoServlet extends HttpServlet {
 		
 
 		
-		Banco banco = new Banco();
+		Produtos banco = new Produtos();
 		Produto produto = banco.buscarProdutoPeloId(id);
 		produto.setNome(nomeProduto);
 		produto.setDescricao(paramDescricaoProduto);

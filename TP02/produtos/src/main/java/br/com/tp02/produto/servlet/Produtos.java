@@ -8,7 +8,7 @@ SWII5- Trabalho Prático 02
 VITOR HUGO CHAVES SILVA REIS CB3012115
 ANTONIO RODRIGUES DANTAS JUNIOR CB3010775 
 */
-public class Banco {
+public class Produtos {
 
 	private static List<Produto> lista = new ArrayList<>();
 	private static Integer chaveSequencial = 1;
@@ -37,14 +37,14 @@ static {
 	
 	// adicionar produto
 	public void adicionar(Produto produto) {
-		produto.setId(Banco.chaveSequencial++);
-		Banco.lista.add(produto);
+		produto.setId(Produtos.chaveSequencial++);
+		Produtos.lista.add(produto);
 
 	}
 
 	// listar produto
 	public List<Produto> getProdutos() {
-		return Banco.lista;
+		return Produtos.lista;
 
 	}
 

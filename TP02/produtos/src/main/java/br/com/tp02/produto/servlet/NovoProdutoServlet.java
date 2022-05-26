@@ -40,7 +40,7 @@ public class NovoProdutoServlet extends HttpServlet {
 		produto.setQtdPrevistoMes(qtdPrevistoMes);
 		produto.setPrecoMaxComprado(precoMaxComprado);
 		
-		Banco banco = new Banco();
+		Produtos banco = new Produtos();
 		banco.adicionar(produto);
 		
 		request.setAttribute("produto", produto.getNome());

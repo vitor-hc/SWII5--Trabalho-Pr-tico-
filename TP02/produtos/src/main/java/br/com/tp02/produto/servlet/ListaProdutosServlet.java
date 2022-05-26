@@ -21,7 +21,7 @@ public class ListaProdutosServlet extends HttpServlet{
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 	throws ServletException, IOException{
-		Banco banco=new Banco();
+		Produtos banco=new Produtos();
 		List<Produto> lista=banco.getProdutos();
 		
 		request.setAttribute("produto", lista);

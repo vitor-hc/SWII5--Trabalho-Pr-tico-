@@ -23,7 +23,7 @@ public class MostraProdutoServlet extends HttpServlet {
 		String paramId=request.getParameter("id");
 		Integer id= Integer.valueOf(paramId);
 		
-		Banco banco=new Banco();
+		Produtos banco=new Produtos();
 		
 		Produto produto=banco.buscarProdutoPeloId(id);
 		
